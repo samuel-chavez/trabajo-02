@@ -1,0 +1,44 @@
+---
+import HeaderButton from '../components/HeaderButton.astro';
+import Layout from '../layouts/Layout.astro';
+
+console.log("javascript") 
+---
+
+<header class= "py-8 px-4 nx-auto max-N-xl lg:py-16 lg:px-6">
+    <center>
+        <div class="nx-auto text-center nb-8 lg:mb-16">
+            
+            <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white text-align:center">
+                Raquetados
+            </h2>
+
+            <p class="font-light text-white-500 sn:text-xl dark:text-white-400 text-align">
+                Todo acerca de raquetas
+            </p>
+        
+        </div>
+        <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
+            <HeaderButton class="text-white bg-blue-500 hover:bg-blue-600 font-bold py-2 px-4 rounded" href="/Raquetas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-ping-pong">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12.718 20.713a7.64 7.64 0 0 1 -7.48 -12.755l.72 -.72a7.643 7.643 0 0 1 9.105 -1.283l2.387 -2.345a2.08 2.08 0 0 1 3.057 2.815l-.116 .126l-2.346 2.387a7.644 7.644 0 0 1 -1.052 8.864" />
+                    <path d="M14 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M9.3 5.3l9.4 9.4" />
+                </svg>
+                Raquetas
+            </HeaderButton>
+            <HeaderButton class="text-white" href="/Pelotas">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-ball-tennis"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M6 5.3a9 9 0 0 1 0 13.4" /><path d="M18 5.3a9 9 0 0 0 0 13.4" /></svg>
+                Pelotas</a>
+            <HeaderButton class="text-white" href="/Acerca">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                    <path d="M12 9h.01" />
+                    <path d="M11 12h1v4h1" />
+                </svg></a>Acerca</a>
+        </nav>
+    </center>
+</header>
+
